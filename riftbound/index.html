@@ -1,0 +1,577 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riftbound | Ari Maddison | Game producer</title>
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+
+<body>
+
+    <nav>
+        <a href="/" id="home-link">
+            <svg class="logo" width="70.208145mm" height="88.514336mm" viewBox="0 0 70.208145 88.514336">
+                <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1"
+                    transform="translate(-84.675272,-105.04382)">
+    
+                    <path
+                        d="m 61.006661,166.7397 9.058657,-37.36006 6.662061,27.55334 a 6.7036232,6.4301966 47.849214 0 0 12.631753,0.89257 l 6.111154,-19.68959 4.618044,12.95062 a 3.2199518,2.9967387 43.247824 0 0 5.97456,0.0317 l 5.31165,-23.6762 a 1.3778493,1.3778493 90 0 0 -2.63878,-0.79416 l -4.88376,12.81995 -4.041372,-17.99642 a 4.6936918,4.9891247 48.724627 0 0 -9.216689,-0.31816 L 85.673636,132.7746 78.219457,92.280891 A 8.2079011,8.4344213 47.274079 0 0 62.034533,91.858694 l -20.46682,69.672346 a 10.06234,10.06234 90 0 0 19.438948,5.20866 z"
+                        id="path3" sodipodi:nodetypes="cccccc" transform="translate(43.45043,19.360443)"
+                        inkscape:original-d="m 51.287187,164.13537 18.789105,-70.121893 13.095383,61.548383 11.978559,-32.74162 7.930056,27.40043 6.97486,-23.17565"
+                        inkscape:path-effect="#path-effect7" inkscape:label="original" />
+                </g>
+            </svg>
+            <h1>Ari Maddison</h1>
+        </a>
+
+        <a href="/" class="topbar-link">My work</a>
+        <a href="/about" class="topbar-link">About me</a>
+        <a href="/contact" class="topbar-link">Get in touch</a>
+        <a href="/extras" class="topbar-link">Extras</a>
+    </nav>
+
+    <div class="content">
+        <!-- <h1>Riftbound</h1> -->
+        <img class="logo-light" src="/brand/riftbound full.svg" alt="Riftbound">
+        <img class="logo-dark" src="/brand/riftbound full dark.svg" alt="Riftbound">
+        <p>A tabletop roleplaying game for sci-fi stories</p>
+        <div class="hl"></div>
+
+        <p>
+            Riftbound is a TTRPG that I've been working on for a long time. I want to keep it approachable for beginners,
+            but maintain a lot of depth for experienced players.
+        </p>
+        <p>
+            I'm trying to combine wargamey and roleplay-focused elements so there's something for everyone.
+        </p>
+        <p>
+            Riftbound is still very much in active development, so I'd love to <a href="/contact">hear what you think of it</a>!
+        </p>
+
+        <h2>Try it out</h2>
+        <a href="rules.pdf" target="_blank" class="card"><span class="material-symbols-rounded">draft</span><span>Core rules</span></a>
+        <a href="character-short.pdf" target="_blank" class="card"><span class="material-symbols-rounded">draft</span><span>Character sheet (A5)</span></a>
+        <a href="character.pdf" target="_blank" class="card"><span class="material-symbols-rounded">draft</span><span>Extended character sheet (A5)</span></a>
+        <a href="creatures.pdf" target="_blank" class="card"><span class="material-symbols-rounded">draft</span><span>Creature profiles</span></a>
+
+        <h2>Changelog</h2>
+
+        <span class="grey">
+            <h3>(upcoming)</h3>
+            <ul>
+                <li>Hyperlinks in the rules document</li>
+                <li>A proper digital character sheet, maybe</li>
+                <li>More content</li>
+                <li>Balance changes</li>
+            </ul>
+        </span>
+        
+        <h3>alpha1</h3>
+        <ul>
+            <li>
+                Major version increase 😎 wow. I decided to increase the major version because the core systems are now feature-complete.
+                Obviously there will be more levels, equipment, vehicles, abilities, etc in the beta version but all the core systems are
+                in place.
+            </li>
+
+            <li>Engineer</li>
+            <ul>
+                <li>Added the Engineer, the fourth and final (for now) Class option with a focus on working with machines.</li>
+                <li>Added their Signature Equpiment, the Signature Augmentation, and their Ability, Jury-rig.</li>
+                <li>
+                    I am looking at buffing the Healer because Jury-rig does feel like it's stepping on their toes a bit. It's not
+                    like they're doing particularly well to begin with.
+                </li>
+            </ul>
+
+            <li>The Scout</li>
+            <ul>
+                <li>The sixth and final (for now) Role is an AGI-scaling burst DPS.</li>
+                <li>Added their abilities Focus and All Out.</li>
+                <li>
+                    I'm not very confident in their current state (I think the free actions from Focus might be too strong and
+                    I think the reward for building AGI might not be strong enough)
+                </li>
+            </ul>
+
+            <li>Vehicle rework</li>
+            <ul>
+                <li>
+                    Vehicles have been streamlined: they should be easier to understand and play with. Pilots should
+                    simultaneously enjoy reduced busywork and increased strategic depth. Here are some highlights:
+                </li>
+                <li>
+                    Vehicles explicitly do not require any Watts outside combat. Pilots are no longer required to
+                    calculate their Charge spending during downtime and travel.
+                </li>
+                <li>
+                    Watts and the economy surrounding them have been overhauled. Watts no longer expire at the end of each round: the
+                    original implementation was interesting in theory, but now that Vehicle Actions are considered full Actions,
+                    the Watt costs were basically redundant.
+                </li>
+                <li>
+                    Engines have been replaced with Capacitors, which store Watts instead of Charge. Now the only interaction between
+                    vehicles and Charge is a single Action to convert Charge into Watts. (Engines will return later as a way to
+                    regenerate Watts over time using fuel.)
+                </li>
+                <li>
+                    The total number of Watts available on a "full tank" has been significantly lowered to make Pilots consider leaving
+                    their vehicles from time to time.
+                </li>
+                <li>
+                    System Weight is largely unchanged, but it has been rephrased as Slots which I think is a clearer analogy. Slots are
+                    tied to specific types of System, which might be reverted later as Signature Equipment becomes increasingly modular.
+                </li>
+                <li>
+                    System profiles have been made generally shorter. All Vehicle Actions now say their Watts cost in brackets at the
+                    front, and all Systems now use 1 Slot by default.
+                </li>
+            </ul>
+
+            <li>The new character sheet</li>
+            <ul>
+                <li>
+                    Feast your eyes on all eighteen pages of the new and beautiful extended character sheet, now updated for
+                    Riftbound alpha and rendered for your viewing pleasure in a moreish A5 form factor.
+                </li>
+                <li>
+                    The revolutionary expansion page system means the new and beautiful extended character sheet supports UNLIMITED
+                    Abilities, Attacks, Equipment and more. Riftbound now has THE LONGEST CHARACTER SHEET EVER MADE
+                    (until you run out of paper).
+                </li>
+                <li>Pilots and Biologists will love the all-new Vehicle and Companion sheets, all in one convenient place.</li>
+                <li>
+                    And if that wasn't enough, the new and beautiful extended character sheet also includes your very own blank page for
+                    truly limitless customisation.
+                </li>
+                <li>
+                    In order to support these enhancements I have bravely removed the editable form fields from the PDF. If you want them
+                    back please add them yourself (and then send it to me). I actually can't stand working with PDFs.
+                </li>
+            </ul>
+
+            <li>Misc.</li>
+            <ul>
+                <li>Buffed Surge because the Scout can basically do that every other turn at level 1.</li>
+                <li>
+                    Patch Up explicitly does not work on Vehicles to differentiate it from Jury-rig. I don't think it would be fair
+                    to the Healer or to Robot PCs to also stop it working on Robots, though.
+                </li>
+                <li>Renamed Charge (the Damage Ability) to Blitz to distinguish it from Charge (the keyword) and Charge (the resource).</li>
+                <li>Assorted tiny clarifications and adjustments.</li>
+            </ul>
+        </ul>
+
+        <h3>indev4.1</h3>
+        <ul>
+            <li>Generally added more shots to weapons and enemy attacks, aiming for about 2-3 more damage per attack, and buffed enemy defenses</li>
+            <li>Patch Up now costs 1SP, but has 2 extra healing to compensate</li>
+            <li>Lessened the effect on Indirect to -2</li>
+            <li>Actually explained what HP and SP are</li>
+            <li>The Robotic Ability no longer reduces your HP and SP (for now)</li>
+            <li>Changed a certain enemy's Webbed condition to use the Grappled status effect</li>
+            <li>Clarifications & corrections</li>
+        </ul>
+
+        <h3>indev4</h3>
+        <ul>
+            <li>The third Class option, the Biologist, and their Signature Companion</li>
+            <li>The fifth Role option, the Sentinel - another Defense Role</li>
+            <li>
+                The Signature Ability rule now applies to single Actions rather than whole Abilities to avoid confusion with Lockdown's 
+                two active effects.
+            </li>
+        </ul>
+
+        <h3>indev3.2</h3>
+        <ul>
+            <li>Several clarifications and corrections</li>
+        </ul>
+
+        <h3>indev3.1b</h3>
+        <ul>
+            <li>Renamed Move Carefully to Simple But Effective to better fit its new effect</li>
+            <li>Added The Captain to the Building your character section</li>
+            <li>
+                Reverted the Operate Action. Vehicle Actions now use one Action each. The Operate Action meant you could
+                Prepare WIS for free every turn which was cringe.
+            </li>
+        </ul>
+
+        <h3>indev3.1</h3>
+        <ul>
+            <li>
+                Added the Operate Action which lets you take as many Vehicle Actions as you like. I think this is how
+                I originally intended vehicles to work because otherwise Watts don't mean much for single-operator
+                vehicles.
+            </li>
+            <li>
+                Evasive Manoeuvres has been replaced by Backup, which lets a Pilot call on their Signature Vehicle
+                for aid even when it's not right next to them. This change and the next change are meant to give
+                Pilots something to do when they are inside a building.
+            </li>
+            <li>
+                Both Classes now additionally start with a choice of a few different weapons. This replaces the
+                Gunner's simple melee weapon.
+            </li>
+            <li>
+                Move Carefully now gives Gunners some extra stats to bring them more in line with Pilots.
+            </li>
+            <li>Added the Signature Vehicle (Mechsuit) and its Systems.</li>
+            <li>Added a ramming Attack to the Giant Wheels Mk1.</li>
+            <li>Clarified rules for the range of Vehicle Attacks.</li>
+            <li>Updated the Building your character section appropriately.</li>
+            <li>
+                The engine Systems now tell you the total number of Watts they generate from a full charge for
+                convenience
+            </li>
+        </ul>
+
+        <h3>indev3b</h3>
+        <ul>
+            <li>
+                The defensive Skilled effect for melee weapons is now the same everywhere (reroll 1 die).
+                I don't want another indev1 light armour situation.
+            </li>
+        </ul>
+
+        <h3>indev3</h3>
+        <ul>
+            <li>Vehicles</li>
+            <ul>
+                <li>Added rules for vehicles. Currently the only vehicles are the Pilot's Signature Vehicles.</li>
+            </ul>
+
+            <li>Pilot</li>
+            <ul>
+                <li>Added the Pilot, the second Class option. They are focused on Vehicles.</li>
+                <li>Added their Signature Equipment, the three different Signature Vehicles</li>
+                <li>Added Evasive Manoeuvres, their level 1 Ability</li>
+            </ul>
+
+            <li>The Captain</li>
+            <ul>
+                <li>
+                    Added The Captain, the fourth Role and the second Support Role. They are focused on manipulating
+                    turn order.
+                </li>
+                <li>Added some Abilities for them.</li>
+            </ul>
+
+            <li>Skilled</li>
+            <ul>
+                <li>
+                    Added the Skilled keyword. The Traits system was great for roleplay stuff, but it didn't allow
+                    your character to be good with a particular kind of weapon, for example. That's what Skilled is for.
+                </li>
+                <li>
+                    Your Class and Signature Equipment now make you Skilled with certain weapons, or vehicles in the Pilot's case.
+                </li>
+                <li>
+                    Most weapons and vehicles now gain an additional bonus when you are Skilled with them. In summary:
+                </li>
+                <ul>
+                    <li>Most vehicles cannot be piloted unless you are Skilled with them.</li>
+                    <li>Melee Weapons can be used as worse shields against only Melee attacks.</li>
+                    <li>You can only Attack with a shield if you are Skilled.</li>
+                    <li>You can only Grapple with a whip if you are Skilled.</li>
+                    <li>Pistols can be Reloaded/Recharged as an Instant instead of an Action.</li>
+                    <li>The longer-range Attack on rifles can now only be used if you are Skilled.</li>
+                    <li>Cannons are not Heavy if you are Skilled.</li>
+                </ul>
+                <li>
+                    You can now choose to spend your Prestige to do something that would normally require you to be
+                    Skilled, or to reroll something as before.
+                </li>
+            </ul>
+
+            <li>Misc.</li>
+            <ul>
+                <li>Added the Quick Ability</li>
+                <li>Renamed Photon Gun to Photon Cannon to make it clear that it's a Cannon.</li>
+                <li>Fixed various typos</li>
+            </ul>
+        </ul>
+
+        <h3>indev2</h3>
+        <ul>
+            <li>
+                First playtest brought up enough QoL issues to warrant a minor version increase! There are some serious breaking
+                changes in this one. (The new Classes will have to wait for indev3.)
+            </li>
+
+            <li>Attribute adjustments</li>
+            <ul>
+                <li>Renamed Celerity (CEL) to Agility (AGI). A thesaurus is not part of Riftbound's intended user experience.</li>
+                <li>
+                    VSN ended up being used a <em>lot</em>. Observation, investigation, ranged attacks and stealth cover a lot of situations.
+                    Changed the guidance to suggest using WIS for detailed investigation and AGI for stealth.
+                </li>
+                <li>
+                    AGI is now at serious risk of becoming overloaded. For this reason, the Move Action no longer considers AGI.
+                    Everyone now moves a nice round 10m.
+                </li>
+                <li>
+                    (WIS is also at risk of becoming overloaded in indev3 when piloting becomes relevant. I'm looking into the options for
+                    separating piloting from WIS: after all, the archetypical sci-fi pilot is not particularly wise.)
+                </li>
+            </ul>
+
+            <li>Signature Weapon adjustments</li>
+            <ul>
+                <li>Renamed Signature Armaments to Signature Weapons.</li>
+                <li>
+                    Generally buffed Signature Weapons. Since all Gunners get a Simple Melee Weapon, their Signature needs to feel special.
+                    Some Signatures needed more help than others because they were just bad.
+                </li>
+                <li>Signature Weapon (Melee):</li>
+                <ul>
+                    <li>Split the Signature Weapon (Melee) into multiple separate profiles.</li>
+                    <li>One-handed: Shots 1 ⟶ 4, Damage 6 ⟶ 2 (Max damage 6 ⟶ 8)</li>
+                    <li>Two-handed: Shots 1 ⟶ 2, Damage 8 ⟶ 5 (Max damage 8 ⟶ 10)</li>
+                    <li>Added Heavy and Spear options.</li>
+                </ul>
+                <li>Signature Weapon (Ranged):</li>
+                <ul>
+                    <li>
+                        Ballistic Pistol: Shots 2 ⟶ 4. Uses 2 ⟶ 1 Ammo. (Max damage 4 ⟶ 8. I want the Pistols' unique
+                        strength to be their Ammo/Charge efficiency.)
+                    </li>
+                    <li>
+                        Laser Pistol: Damage 2 ⟶ 4. Uses 10 ⟶ 5 Charge. (Max damage 4 ⟶ 8).
+                    </li>
+                    <li>Ballistic Rifle and Laser Rifle:</li>
+                    <ul>
+                        50m: Shots 4 ⟶ 5. (Max damage 8 ⟶ 10) <br>
+                        100m: Shots 2 ⟶ 3. (Max damage 4 ⟶ 6)
+                    </ul>
+                    <li>
+                        Ballistic Cannon: Shots 1d6 ⟶ 2d6 + 2. Damage 2 ⟶ 1. (Max damage 12 ⟶ 14. I want to lean into the Ballistic Cannon's
+                        chaotic and random identity.)
+                    </li>
+                    <li>
+                        Laser Cannon: Damage 8 ⟶ 12. (Max damage 8 ⟶ 12. On the other hand, I want to lean into the Laser Cannon's
+                        all-or-nothing identity. Both Cannons are meant to be about risk and reward.)
+                    </li>
+                </ul>
+                <li>Signature Weapon (Shield):</li>
+                <ul>
+                    <li>One-handed: Shots 1 ⟶ 2. (Max damage 2 ⟶ 4)</li>
+                    <li>
+                        Two-handed: Shots 1 ⟶ 2. Automatically block 2 ⟶ 1 shot(s). New: The Instant effect can be used any number of times
+                        per Dodge Roll. (Max damage 4 ⟶ 8)
+                    </li>
+                </ul>
+                <li>Signature Weapon (Whip):</li>
+                <ul>
+                    <li>
+                        The Whip's Snaring effect has been moved to the Grapple Action. Now, the Whip's special effect is that it can
+                        Grapple at a range of 2m.
+                    </li>
+                    
+                    <li>Because it lost this unique strength, it needs more damage. Shots 1 ⟶ 2.</li>
+                    <li>Now ignores the Point Blanc rule (see below).</li>
+                </ul>
+                <li>Also added weaker, non-signature versions of the Laser Pistol, cannons, shields, Whip and Heavy Melee weapons.</li>
+            </ul>
+
+            <li>Rethinking Shots</li>
+            <ul>
+                <li>
+                    During the playtest, most Attacks completely missed. Everyone was rolling below average, but this meant they did no
+                    damage at all - much more frustrating than doing only a little damage. The only weapon that felt good was one character's
+                    Signature ballistic cannon - a weapon with lots of Shots. Almost every time it fired, it at least did <em>something</em>.
+                </li>
+                <li>
+                    As such, most weapons are having some of their power shifted from Damage to Shots. The only weapons with one Shot
+                    will be ones where being all-or-nothing is part of that weapon's identity (like the previous example of the Laser Cannon).
+                </li>
+                <li>
+                    Here's an exhaustive list of those weapons (apart from the Signatures, which were mentioned earlier).
+                </li>
+                
+                <ul>
+                    <li>Hardlight Bayonet: Shots 1 ⟶ 2, Damage 6 ⟶ 3.</li>
+                    <li>Precision Rifle: Shots 2/1 ⟶ 4/2, Damage 3 ⟶ 2. (Now it's more similar to the Signature Ballistic Rifle.)</li>
+                    <li>Primitive Bayonet: Shots 1 ⟶ 2, Damage 4 ⟶ 2.</li>
+                    <li>Simple Baton/Shortsword: Shots 1 ⟶ 3, Damage 6 ⟶ 2.</li>
+                    <li>Simple Club/Longsword: Shots 1 ⟶ 2, Damage 8 ⟶ 4.</li>
+                    <li>Simple Dagger (Melee): Shots 1 ⟶ 4, Damage 4 ⟶ 1.</li>
+                    <li>Simple Spear: Shots 1 ⟶ 2, Damage 6 ⟶ 3. New: This Attack ignores the Point Blanc rule. (explained below)</li>
+                    <li>Sonic Rifle: Shots 2/1 ⟶ 4/4, Damage 8/4 ⟶ 2/1.</li>
+                    <li>Standard Pistol: Shots 2 ⟶ 3. (Damage unchanged because I don't want it to be <em>that</em> much worse than the Signature.)</li>
+                </ul>
+
+                <li>The enemies have also been given more Shots.</li>
+            </ul>
+
+            <li>Armour changes</li>
+            <ul>
+                <li>
+                    For the same reason, both kinds of Armour have been fully reworked. They are now generally weaker. This should give
+                    The Tank, and especially the poor Healer, a reason to exist.
+                </li>
+                <li>
+                    On the other hand, it'll also let the Tank take damage from time to time, so their HP is a meaningful resource that can
+                    run out.
+                </li>
+                <li>
+                    Heavy Armour: Heavy 0. You must use 4+ instead of your ▯AGI for Dodge Rolls.
+                </li>
+                <li>
+                    Light Armour: You can choose to use 5+ instead of your ▯AGI for Dodge Rolls.
+                </li>
+            </ul>
+
+            <li>The Point Blanc rule</li>
+            <ul>
+                <li>
+                    Unless you and the target were in Melee range of each other, you could previously fire non-Melee attacks into and out of
+                    combat with no penalty. This was an unintended oversight.
+                </li>
+                <li>
+                    Named this rule Point Blanc so it's easy to make specific Attacks ignore it (e.g. spears), and added
+                    it to the Don't Forget section.
+                </li>
+                <li>Now, if you use a non-Melee Attack:</li>
+                <ul>
+                    <li>If the <em>target</em> is in base contact with their enemy, you suffer -1 to hit.</li>
+                    <li>If <em>you</em> are in base contact with your enemy, you suffer -2 to hit instead.</li>
+                </ul>
+            </ul>
+
+            <li>Grappling</li>
+            <ul>
+                <li>
+                    Moved the Whip's Snaring effect to a Grapple action that everyone can use, and added an additional option to apply the
+                    Grappled status effect.
+                </li>
+                <li>Added the Grappled status effect for when another creature is holding you so that you can't move.</li>
+            </ul>
+
+            <li>Overwatch tweaks</li>
+            <ul>
+                <li>Overwatch can now be triggered by any movement, not just the Move Action, including involuntary movement.</li>
+                <li>Overwatch can now be cancelled by taking damage and failing a WIL check.</li>
+                <li>You can't take any other Actions after taking Overwatch. That way, you have to stand still.</li>
+            </ul>
+
+            <li>Misc. changes</li>
+            <ul>
+                <li>
+                    When you use Intercept's Reaction (both I and II), you now move to either the unit or the attacker. It was hard to visualise
+                    The Tank blocking shots when they were a whole 3m away from the action. This should also open up some fun ways to get into
+                    Combat.
+                </li>
+                <li>
+                    The Alien Beast was absolutely matrix dodging everything. Reduced its ▯AGI to just +1, a value more befitting its Level,
+                    giving it a healthier 4+ to dodge.
+                </li>
+                <li>
+                    The Guard Robot II's Cleave Attack now only does one type of damage, and no longer has random Damage.
+                </li>
+                <li>
+                    You now have to use your shield before you make a Dodge Roll, not during. The Shield is now also a Melee Weapon, which I don't
+                    think changes anything.
+                </li>
+                <li>
+                    Dual wielding is now explicitly allowed, but it doesn't exempt you from Attack Counters.
+                </li>
+                <li>
+                    Each Attack Token now gives you -2 to hit. They weren't impactful enough to discourage Attack spam.
+                </li>
+                <li>It's now possible to stop being prone.</li>
+                <li>Adjusted some wording.</li>
+                <li>Improved the formatting of the character sheet's editable fields.</li>
+            </ul>
+        </ul>
+
+        <h3>indev1.4b</h3>
+        <ul>
+            <li>The whip now specifies that it does sharp damage</li>
+            <li>You can now choose to start with Professional outfits as well as Everyday</li>
+        </ul>
+
+        <h3>indev1.4</h3>
+        <ul>
+            <li>Reworked Ammo and Charge to generally be more forgiving</li>
+            <ul>
+                <li>Renamed Ammo Clips to Ammo Magazines upon instruction from someone who knows what they're talking about</li>
+                <li>Made Ammo Magazines twice the size - this means you now start with twice as much Ammo</li>
+                <li>Made Ammo Magazines into Adventuring Gear and gave them a mC value (oops)</li>
+                <li>Made Batteries bigger and cheaper</li>
+                <li>The Adventuring Kit now contains extra Batteries for each Charge equipment you have.</li>
+                <li>
+                    Added the Solar Array, an expensive but situationally powerful Adventuring Gear option that lets you generate
+                    Charge while off the grid.
+                </li>
+            </ul>
+
+            <li>Gave the player more control over their Attribute Scores</li>
+            <ul>
+                <li>Added a pity system when rolling for attributes</li>
+                <li>Let the player choose what scores to keep, i.e. they can be bad on purpose</li>
+            </ul>
+
+            <li>Fixed Gunner description to reflect the growing number of Signature options</li>
+            <li>Added Hedonism, another suggested Ideal</li>
+        </ul>
+
+        <h3>indev1.3b</h3>
+        <ul>
+            <li>Clarified wording of the Active keyword, Seizing the Initiative and the Signature Armament (Whip)</li>
+            <li>Added Pep Talk, a Support Ability aimed at The Captain but available to everyone</li>
+            <li>
+                Reduced the AP cost of Clear Mind and clarified (haha) its wording. 3 Actions is a lot so hopefully this will make
+                it more appealing for all Support characters.
+            </li>
+            <li>Attack Counters are no longer lost when your turn starts. This reverts an unintended buff to Seizing the Initiative.</li>
+            <li>Added the minimum HP gain to the Don't Forget section</li>
+        </ul>
+
+        <h3>indev1.3</h3>
+        <ul>
+            <li>Added Attack Counters to nerf Attack spam and buff Overwatch.</li>
+            <li>Added somewhere to keep track of easy-to-forget rules that aren't referred to anywhere on the character sheet.</li>
+        </ul>
+
+        <h3>indev1.2</h3>
+        <ul>
+            <li>Added Prone and Taunted status effects</li>
+            <li>Added Signature Armament (Whip), another option aimed at Tank/Gunners (and eventually Sentinel/Gunners)</li>
+            <li>Added more Simple Melee Weapons for Gunners to choose from</li>
+            <li>Added unarmed and improvised Attacks</li>
+        </ul>
+
+        <h3>indev1.1b</h3>
+        <ul>
+            <li>Heavy Armour now only reduces CEL by 1</li>
+        </ul>
+
+        <h3>indev1.1</h3>
+        <ul>
+            <li>Minor Ability adjustments</li>
+            <li>Changed some wording</li>
+        </ul>
+
+        <h3>indev1</h3>
+        <ul>
+            <li>First version!!</li>
+            <li>The Lancer, The Healer and The Tank</li>
+            <li>Gunner</li>
+            <li>Up to level 4</li>
+        </ul>
+    </div>
+
+    <div class="spacer"></div>
+
+    <p class="footer">
+        © Ari Maddison 2023-2024<br><br>
+        I made this website in pure HTML/JS with SCSS - you can read the full source code with your browser's dev tools.<br>
+    </p>
+</body>
+
+</html>

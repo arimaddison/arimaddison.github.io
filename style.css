@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,700;1,400;1,700&family=Red+Hat+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+@keyframes rainbow-dark {
+  0%, 9% {
+    color: white;
+    fill: white;
+    border-color: white;
+  }
+  20%, 39% {
+    color: #ff0094;
+    fill: #ff0094;
+    border-color: #ff0094;
+  }
+  40%, 59% {
+    color: #fff100;
+    fill: #fff100;
+    border-color: #fff100;
+  }
+  60%, 79% {
+    color: #00ffae;
+    fill: #00ffae;
+    border-color: #00ffae;
+  }
+  80%, 100% {
+    color: #4c00ff;
+    fill: #4c00ff;
+    border-color: #4c00ff;
+  }
+}
+@keyframes rainbow {
+  0%, 9% {
+    color: black;
+    fill: black;
+    border-color: black;
+  }
+  20%, 39% {
+    color: #ff0094;
+    fill: #ff0094;
+    border-color: #ff0094;
+  }
+  40%, 59% {
+    color: #fff100;
+    fill: #fff100;
+    border-color: #fff100;
+  }
+  60%, 79% {
+    color: #00ffae;
+    fill: #00ffae;
+    border-color: #00ffae;
+  }
+  80%, 100% {
+    color: #4c00ff;
+    fill: #4c00ff;
+    border-color: #4c00ff;
+  }
+}
+:root {
+  font-family: "Red Hat Text", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  all: initial;
+  cursor: pointer;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  font-family: "Red Hat Display", sans-serif;
+  margin: 0;
+}
+
+.material-symbols-rounded {
+  font-variation-settings: "FILL" 1, "wght" 600, "GRAD" 0, "opsz" 24;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  height: 50px;
+  padding: 5px 15px;
+  border-bottom: 2px solid black;
+}
+nav .topbar-link {
+  color: black;
+  transition: transform 100ms;
+  padding: 0 5px;
+}
+nav .topbar-link:hover:not(.current) {
+  animation: rainbow 400ms forwards;
+  transform: scale(1.05) rotateZ(-2deg);
+}
+nav .topbar-link.current {
+  background-color: black;
+  color: white;
+  transform: scale(1.05) rotateZ(-2deg);
+}
+nav #home-link {
+  display: flex;
+  align-items: inherit;
+  gap: 20px;
+  height: inherit;
+  color: black;
+  fill: black;
+  transition: transform 100ms;
+}
+nav #home-link:hover {
+  animation: rainbow 400ms forwards;
+  transform: scale(1.05) rotateZ(-2deg);
+}
+nav #home-link * {
+  fill: inherit;
+}
+nav #home-link .logo {
+  width: 30px;
+}
+nav #home-link .logo path {
+  fill: inherit;
+  fill-rule: nonzero;
+  stroke: none;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  gap: 100px;
+}
+.hero h1 {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 48pt;
+  line-height: 50pt;
+}
+.hero img {
+  width: 180px;
+}
+
+#cards {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15% 20px;
+  gap: 30px;
+}
+#cards > a {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid black;
+  border-radius: 20px;
+  min-height: 300px;
+  overflow: hidden;
+  background-color: white;
+  transition: transform 100ms;
+}
+#cards > a:hover {
+  animation: rainbow 400ms forwards;
+  transform: scale(1.05) rotateZ(-2deg);
+}
+#cards > a > * {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 20px;
+}
+#cards > a > .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#cards > a > .image {
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+}
+#cards #no-cards-message {
+  display: none;
+  margin-top: 20px;
+}
+#cards #no-cards-message #reset-filters {
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 100ms;
+}
+#cards #no-cards-message #reset-filters:hover {
+  animation: rainbow 400ms forwards;
+  transform: scale(1.05) rotateZ(-2deg);
+}
+
+.spacer {
+  height: 100px;
+}
+
+#tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  row-gap: 5px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+#tags .filter-label {
+  color: #999999;
+}
+#tags .filter-button {
+  cursor: pointer;
+  transition: transform 100ms;
+  padding: 0 5px;
+}
+#tags .filter-button:hover {
+  animation: rainbow 400ms forwards;
+  transform: scale(1.05) rotateZ(-2deg);
+}
+#tags .filter-button.bold {
+  background-color: black;
+  color: white;
+  transform: scale(1.05) rotateZ(-2deg);
+}
+
+.content {
+  padding: 10vh 15% 0;
+}
+.content h1 {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 48pt;
+  line-height: 50pt;
+}
+.content h2 {
+  padding-top: 30px;
+}
+.content h3 {
+  padding-top: 20px;
+}
+.content a {
+  font-weight: bold;
+  display: inline-block;
+  background-color: white;
+  transition: transform 100ms;
+}
+.content a:hover {
+  animation: rainbow 400ms forwards;
+  transform: scale(1.05) rotateZ(-2deg);
+}
+.content .card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
+  margin: 10px 0;
+  padding: 10px;
+  padding-right: 15px;
+  font-weight: bold;
+  transition: transform 100ms;
+}
+.content .card:hover {
+  animation: rainbow 400ms forwards;
+  transform: scale(1.05) rotateZ(-2deg);
+}
+.content .gallery {
+  text-align: center;
+}
+.content .gallery a {
+  background: none;
+}
+.content .gallery img {
+  max-height: 200px;
+  margin: 10px 0 0 10px;
+  border-radius: 10px;
+}
+.content .gallery.mobile img {
+  max-height: 300px;
+}
+
+.hl {
+  margin: 50px 0;
+  border-bottom: 1px solid black;
+}
+
+.grey {
+  color: #999999;
+}
+
+ul > ul {
+  margin-bottom: 15px;
+}
+ul li {
+  margin-bottom: 5px;
+}
+
+.footer {
+  color: #999999;
+  text-align: center;
+}
+
+.headshot {
+  border-radius: 50%;
+  border: 2px solid black;
+  box-sizing: border-box;
+  box-shadow: #ff0094 -5px 5px, #fff100 -10px 10px, #00ffae -15px 15px, #4c00ff -20px 20px;
+}
+
+.logo-dark, .logo-light {
+  max-width: 80vw;
+}
+
+.logo-light {
+  display: block;
+}
+
+.logo-dark {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    height: auto;
+    padding-bottom: 10px;
+  }
+  nav #home-link {
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100vw;
+  }
+  .hero {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  .hero h1 {
+    font-size: 32pt;
+    line-height: 36pt;
+  }
+  #tags {
+    margin: 20px;
+    gap: 10px;
+    width: auto;
+  }
+  #cards {
+    padding: 0 20px;
+  }
+  #cards > a {
+    min-height: auto;
+  }
+  .content {
+    padding: 50px 20px;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+  nav {
+    border-bottom-color: #999999;
+  }
+  nav .topbar-link {
+    color: white;
+  }
+  nav .topbar-link:hover:not(.current) {
+    animation-name: rainbow-dark;
+  }
+  nav .topbar-link.current {
+    background-color: white;
+    color: black;
+  }
+  nav #home-link {
+    color: white;
+    fill: white;
+  }
+  nav #home-link:hover {
+    animation-name: rainbow-dark;
+  }
+  #cards > a {
+    background-color: black;
+    border-color: #999999;
+    color: white;
+  }
+  #tags .filter-button:hover {
+    animation-name: rainbow-dark;
+  }
+  #tags .filter-button.bold {
+    background-color: white;
+    color: black;
+  }
+  .content a {
+    background-color: black;
+    color: white;
+  }
+  .content a:hover {
+    animation-name: rainbow-dark;
+  }
+  .content .card {
+    background-color: black;
+    border-color: white;
+  }
+  .hl {
+    border-bottom-color: white;
+  }
+  .logo-dark {
+    display: block;
+  }
+  .logo-light {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

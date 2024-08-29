@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ari Maddison | Game producer</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script>
+        var CARDS = [
+            {
+                name: '2Kidz (in a Trenchcoat)',
+                description: '2 players 1 character beat-\'em-up',
+                url: '/2kidz',
+                image: 'img/2kids_promo_art.png',
+                tags: ['Godot', 'PC']
+            },
+            {
+                name: 'Riftbound',
+                description: 'A tabletop roleplaying game for sci-fi stories',
+                url: '/riftbound',
+                image: 'img/stock_astronaut.jpg',
+                tags: ['Tabletop']
+            },
+            {
+                name: 'Tiny Witch',
+                description: 'A tiny puzzle game for Android',
+                url: '/tiny-witch',
+                image: 'img/tiny-witch-thumb.png',
+                tags: ['GameMaker', 'Mobile']
+            },
+        ]
+    </script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <a href="/" id="home-link">
+            <svg class="logo" width="70.208145mm" height="88.514336mm" viewBox="0 0 70.208145 88.514336">
+                <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1"
+                    transform="translate(-84.675272,-105.04382)">
+    
+                    <path
+                        d="m 61.006661,166.7397 9.058657,-37.36006 6.662061,27.55334 a 6.7036232,6.4301966 47.849214 0 0 12.631753,0.89257 l 6.111154,-19.68959 4.618044,12.95062 a 3.2199518,2.9967387 43.247824 0 0 5.97456,0.0317 l 5.31165,-23.6762 a 1.3778493,1.3778493 90 0 0 -2.63878,-0.79416 l -4.88376,12.81995 -4.041372,-17.99642 a 4.6936918,4.9891247 48.724627 0 0 -9.216689,-0.31816 L 85.673636,132.7746 78.219457,92.280891 A 8.2079011,8.4344213 47.274079 0 0 62.034533,91.858694 l -20.46682,69.672346 a 10.06234,10.06234 90 0 0 19.438948,5.20866 z"
+                        id="path3" sodipodi:nodetypes="cccccc" transform="translate(43.45043,19.360443)"
+                        inkscape:original-d="m 51.287187,164.13537 18.789105,-70.121893 13.095383,61.548383 11.978559,-32.74162 7.930056,27.40043 6.97486,-23.17565"
+                        inkscape:path-effect="#path-effect7" inkscape:label="original" />
+                </g>
+            </svg>
+            <h1>Ari Maddison</h1>
+        </a>
+
+        <a href="/" class="topbar-link current">My work</a>
+        <a href="/about" class="topbar-link">About me</a>
+        <a href="/contact" class="topbar-link">Get in touch</a>
+        <a href="/extras" class="topbar-link">Extras</a>
+    </nav>
+
+    <div class="hero">
+        <img src="brand/new logo col.svg" class="hide-on-mobile">
+        <h1>Ari Maddison,<br>Game producer</h1>
+    </div>
+
+    <div id="tags"></div>
+
+    <div id="cards">
+        <div id="no-cards-message">
+            <div>No results :(</div>
+            <div id="reset-filters">Reset filters</div>
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <p class="footer">
+        © Ari Maddison 2023-2024<br><br>
+        I made this website in pure HTML/JS with SCSS - you can read the full source code with your browser's dev tools.<br>
+    </p>
+</body>
+
+</html>
