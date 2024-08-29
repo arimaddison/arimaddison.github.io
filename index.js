@@ -48,12 +48,12 @@ const updateCards = () => {
         }
     })
 
-    document.getElementById('no-cards-message').style.display = allHidden ? 'block' : 'none'
+    // document.getElementById('no-cards-message').style.display = allHidden ? 'block' : 'none'
 }
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    redrawTags();
+    // redrawTags();
     
     CARDS.forEach((i) => {
         i.node = createElementFromHTML(
@@ -65,10 +65,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     updateCards();
 
-    document.getElementById('reset-filters').addEventListener('click', () => {
-        tags_selected = []
+    // document.getElementById('reset-filters').addEventListener('click', () => {
+    //     tags_selected = []
 
-        redrawTags();
-        updateCards();
-    })
+    //     redrawTags();
+    //     updateCards();
+    // })
 })
