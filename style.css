@@ -329,7 +329,7 @@ ul li {
   display: block;
 }
 
-.logo-dark {
+.logo-dark, .main-logo-dark {
   display: none;
 }
 
@@ -372,7 +372,7 @@ ul li {
     padding: 50px 20px;
   }
   .hide-on-mobile {
-    display: none;
+    display: none !important;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -402,7 +402,7 @@ ul li {
   }
   #cards > a {
     background-color: black;
-    border-color: #999999;
+    border-color: white;
     color: white;
   }
   #tags .filter-button:hover {
@@ -426,10 +426,10 @@ ul li {
   .hl {
     border-bottom-color: white;
   }
-  .logo-dark {
+  .logo-dark, .main-logo-dark {
     display: block;
   }
-  .logo-light {
+  .logo-light, .main-logo-light {
     display: none;
   }
 }/*# sourceMappingURL=style.css.map */

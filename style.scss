@@ -428,10 +428,9 @@ ul {
     display: block;
 }
 
-.logo-dark {
+.logo-dark, .main-logo-dark {
     display: none;
 }
-
 
 @media screen and (max-width: 800px) {
     nav {
@@ -485,7 +484,7 @@ ul {
     }
 
     .hide-on-mobile {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -523,7 +522,7 @@ ul {
 
     #cards > a {
         background-color: black;
-        border-color: $text-grey;
+        border-color: white;
         color: white;
     }
 
@@ -558,11 +557,11 @@ ul {
         border-bottom-color: white;
     }
 
-    .logo-dark {
+    .logo-dark, .main-logo-dark {
         display: block;
     }
 
-    .logo-light {
+    .logo-light, .main-logo-light {
         display: none;
     }
 }
