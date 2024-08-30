@@ -322,7 +322,9 @@ ul li {
 }
 
 .logo-dark, .logo-light {
-  max-width: 80vw;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: left;
 }
 
 .logo-light {

@@ -421,7 +421,8 @@ ul {
 }
 
 .logo-dark, .logo-light {
-    max-width: 80vw;
+    width: fit-content;
+    text-align: left;
 }
 
 .logo-light {
