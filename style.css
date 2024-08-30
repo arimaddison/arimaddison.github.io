@@ -325,6 +325,7 @@ ul li {
   width: -moz-fit-content;
   width: fit-content;
   text-align: left;
+  min-width: 30vw;
 }
 
 .logo-light {
