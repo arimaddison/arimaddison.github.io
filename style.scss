@@ -376,14 +376,15 @@ nav {
         }
 
         img {
-            max-height: 200px;
+            max-height: 400px;
+            max-width: 30vw;
 
             margin: 10px 0 0 10px;
             border-radius: 10px;
         }
 
         &.mobile img {
-            max-height: 300px;
+            max-height: 400px;
         }
     }
 }
