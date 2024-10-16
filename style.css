@@ -381,7 +381,7 @@ ul li {
 }
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: black;
+    background-color: #161419;
     color: white;
   }
   nav {
@@ -405,8 +405,8 @@ ul li {
     animation-name: rainbow-dark;
   }
   #cards > a {
-    background-color: black;
-    border-color: white;
+    background-color: #161419;
+    border-color: #999999;
     color: white;
   }
   #tags .filter-button:hover {
@@ -417,18 +417,18 @@ ul li {
     color: black;
   }
   .content a {
-    background-color: black;
+    background-color: #161419;
     color: white;
   }
   .content a:hover {
     animation-name: rainbow-dark;
   }
   .content .card {
-    background-color: black;
-    border-color: white;
+    background-color: #161419;
+    border-color: #999999;
   }
   .hl {
-    border-bottom-color: white;
+    border-bottom-color: #999999;
   }
   .logo-dark, .main-logo-dark {
     display: block;
