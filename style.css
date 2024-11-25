@@ -378,6 +378,11 @@ ul li {
     display: none !important;
   }
 }
+.left {
+  text-align: left;
+  margin: 0 50px;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #161419;
