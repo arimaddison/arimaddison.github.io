@@ -336,6 +336,50 @@ ul li {
   display: none;
 }
 
+.tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.tags > div {
+  border: 2px solid red;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+.tags > div.art {
+  border-color: #ff0094;
+}
+.tags > div.art::before {
+  content: "Art";
+}
+.tags > div.programming {
+  border-color: #fff100;
+}
+.tags > div.programming::before {
+  content: "Programming";
+}
+.tags > div.design {
+  border-color: #00ffae;
+}
+.tags > div.design::before {
+  content: "Design";
+}
+.tags > div.production {
+  border-color: #4c00ff;
+}
+.tags > div.production::before {
+  content: "Production";
+}
+
+.left {
+  text-align: left;
+  margin: 0 50px;
+}
+
 @media screen and (max-width: 800px) {
   nav {
     flex-direction: row;
@@ -377,12 +421,10 @@ ul li {
   .hide-on-mobile {
     display: none !important;
   }
+  .left {
+    margin: 0 20px;
+  }
 }
-.left {
-  text-align: left;
-  margin: 0 50px;
-}
-
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #161419;
@@ -437,7 +479,7 @@ ul li {
   .logo-light, .main-logo-light {
     display: none;
   }
-  .left {
-    margin: 0 20px;
+  .tags {
+    color: white;
   }
 }/*# sourceMappingURL=style.css.map */

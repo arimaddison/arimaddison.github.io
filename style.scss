@@ -439,6 +439,63 @@ ul {
     display: none;
 }
 
+.tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    color: black;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+
+
+    > div {
+        border: 2px solid red;
+        padding: 5px 10px;
+        border-radius: 50px;
+
+        &.art {
+            border-color: $accent1;
+
+            &::before {
+                content: "Art";
+            }
+        }
+
+        &.programming {
+            border-color: $accent2;
+
+            &::before {
+                content: "Programming";
+            }
+        }
+
+        &.design {
+            border-color: $accent3;
+
+            &::before {
+                content: "Design";
+            }
+        }
+
+        &.production {
+            border-color: $accent4;
+
+            &::before {
+                content: "Production";
+            }
+        }
+    }
+}
+
+
+.left {
+    text-align: left;
+    margin: 0 50px;
+}
+
 @media screen and (max-width: 800px) {
     nav {
         flex-direction: row;
@@ -493,11 +550,10 @@ ul {
     .hide-on-mobile {
         display: none !important;
     }
-}
 
-.left {
-    text-align: left;
-    margin: 0 50px;
+    .left {
+        margin: 0 20px;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -577,7 +633,7 @@ ul {
         display: none;
     }
 
-    .left {
-        margin: 0 20px;
+    .tags {
+        color: white;
     }
 }
