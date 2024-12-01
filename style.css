@@ -180,6 +180,9 @@ nav #home-link .logo path {
   flex-direction: column;
   justify-content: center;
 }
+#cards > a > .text > :last-child {
+  margin-bottom: 0;
+}
 #cards > a > .image {
   padding: 20px;
   background-size: cover;
