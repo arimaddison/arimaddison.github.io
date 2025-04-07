@@ -287,6 +287,7 @@ nav #home-link .logo path {
   background: none;
 }
 .content .gallery img {
+  vertical-align: top;
   max-height: 400px;
   max-width: 30vw;
   margin: 10px 0 0 10px;
