@@ -145,6 +145,129 @@ nav #home-link .logo path {
   width: 180px;
 }
 
+.frontpage-grid {
+  display: grid;
+  grid-template: [row1-start] "g1 g1 g1 g1 g1-1 g1-1" 250px [row1-end] [row2-start] "g1-2 g1-2 g1-lore g1-lore g1-lore g1-lore" 250px [row2-end] [row3-start] "g2-1 g2-1 g2 g2 g2 g2" 250px [row3-end] [row4-start] "g2-lore g2-lore g2-lore g2-lore g2-2 g2-2" 250px [row4-end] [row5-start] "g3 g3 g3 g4 g4 g4" 250px [row5-end] [row6-start] "g5 g5 g6 g6 g7 g7" 250px [row6-end]/1fr 1fr 1fr 1fr 1fr 1fr;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15% 20px;
+  gap: 20px;
+}
+.frontpage-grid .grid-1 {
+  grid-area: g1;
+}
+.frontpage-grid .grid-1:hover {
+  transform: scale(1.05) translateY(-10px);
+}
+.frontpage-grid .grid-1-1 {
+  grid-area: g1-1;
+}
+.frontpage-grid .grid-1-1:hover {
+  transform: scale(0.95) rotateZ(-2deg);
+}
+.frontpage-grid .grid-1-2 {
+  grid-area: g1-2;
+}
+.frontpage-grid .grid-1-2:hover {
+  transform: scale(1.05) translateX(10px);
+}
+.frontpage-grid .grid-1-lore {
+  grid-area: g1-lore;
+  border-top: none;
+  border-left: none;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+.frontpage-grid .grid-2 {
+  grid-area: g2;
+}
+.frontpage-grid .grid-2-1 {
+  grid-area: g2-1;
+}
+.frontpage-grid .grid-2-1:hover {
+  transform: scale(1.05) translateY(10px);
+}
+.frontpage-grid .grid-2-2 {
+  grid-area: g2-2;
+}
+.frontpage-grid .grid-2-lore {
+  grid-area: g2-lore;
+  border-top: none;
+  border-right: none;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+.frontpage-grid .grid-3 {
+  grid-area: g3;
+}
+.frontpage-grid .grid-3:hover {
+  transform: scale(1.05) translateX(-10px);
+}
+.frontpage-grid .grid-4 {
+  grid-area: g4;
+}
+.frontpage-grid .grid-5 {
+  grid-area: g5;
+}
+.frontpage-grid .grid-5:hover {
+  transform: scale(1.05) translateY(-10px);
+}
+.frontpage-grid .grid-6 {
+  grid-area: g6;
+}
+.frontpage-grid .grid-6:hover {
+  transform: scale(1.05) translateX(10px);
+}
+.frontpage-grid .grid-7 {
+  grid-area: g7;
+}
+.frontpage-grid > * {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid black;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+  transition: transform 100ms;
+}
+.frontpage-grid > *.always-dark {
+  color: white;
+}
+.frontpage-grid > *:hover {
+  animation: rainbow 400ms forwards;
+  transform: scale(1.05) rotateZ(-2deg);
+}
+.frontpage-grid > *:hover.always-dark {
+  animation: rainbow-dark 400ms forwards;
+}
+.frontpage-grid > * > * {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 20px;
+}
+.frontpage-grid > * > .image {
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frontpage-grid > * > .text {
+  align-self: center;
+}
+.frontpage-grid > .noborder {
+  border: none;
+}
+.frontpage-grid > div {
+  border-style: dashed;
+}
+
 #cards {
   display: flex;
   flex-direction: column;
@@ -325,7 +448,8 @@ ul li {
   box-shadow: #ff0094 -5px 5px, #fff100 -10px 10px, #00ffae -15px 15px, #4c00ff -20px 20px;
 }
 
-.logo-dark, .logo-light {
+.logo-dark,
+.logo-light {
   width: -moz-fit-content;
   width: fit-content;
   text-align: left;
@@ -336,7 +460,8 @@ ul li {
   display: block;
 }
 
-.logo-dark, .main-logo-dark {
+.logo-dark,
+.main-logo-dark {
   display: none;
 }
 
@@ -451,6 +576,11 @@ ul li {
   nav #home-link:hover {
     animation-name: rainbow-dark;
   }
+  .frontpage-grid > * {
+    background-color: #161419;
+    border-color: #999999;
+    color: white;
+  }
   #cards > a {
     background-color: #161419;
     border-color: #999999;
@@ -477,10 +607,12 @@ ul li {
   .hl {
     border-bottom-color: #999999;
   }
-  .logo-dark, .main-logo-dark {
+  .logo-dark,
+  .main-logo-dark {
     display: block;
   }
-  .logo-light, .main-logo-light {
+  .logo-light,
+  .main-logo-light {
     display: none;
   }
   .tags {
