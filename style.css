@@ -147,7 +147,7 @@ nav #home-link .logo path {
 
 .frontpage-grid {
   display: grid;
-  grid-template: [row1-start] "g1 g1 g1 g1 g1-1 g1-1" 250px [row1-end] [row2-start] "g1-2 g1-2 g1-lore g1-lore g1-lore g1-lore" 250px [row2-end] [row3-start] "g2-1 g2-1 g2 g2 g2 g2" 250px [row3-end] [row4-start] "g2-lore g2-lore g2-lore g2-lore g2-2 g2-2" 250px [row4-end] [row5-start] "g3 g3 g3 g4 g4 g4" 250px [row5-end] [row6-start] "g5 g5 g6 g6 g7 g7" 250px [row6-end]/1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template: [row1-start] "g1 g1 g1 g1 g1-1 g1-1" 250px [row1-end] [row2-start] "g1-2 g1-2 g1-lore g1-lore g1-lore g1-lore" 250px [row2-end] [row3-start] "space space space space space space" 80px [row3-end] [row4-start] "g2-1 g2-1 g2 g2 g2 g2" 250px [row4-end] [row5-start] "g2-lore g2-lore g2-lore g2-lore g2-2 g2-2" 250px [row5-end] [row6-start] "space2 space2 space2 space2 space2 space2" 80px [row6-end] [row7-start] "g3 g3 g3 g4 g4 g4" 250px [row7-end] [row8-start] "g5 g5 g6 g6 g7 g7" 250px [row8-end]/1fr 1fr 1fr 1fr 1fr 1fr;
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
@@ -174,12 +174,6 @@ nav #home-link .logo path {
 }
 .frontpage-grid .grid-1-lore {
   grid-area: g1-lore;
-  border-top: none;
-  border-left: none;
-  border-top-right-radius: 0;
-  border-bottom-left-radius: 0;
-  padding-right: 20px;
-  padding-bottom: 10px;
 }
 .frontpage-grid .grid-2 {
   grid-area: g2;
@@ -195,12 +189,6 @@ nav #home-link .logo path {
 }
 .frontpage-grid .grid-2-lore {
   grid-area: g2-lore;
-  border-top: none;
-  border-right: none;
-  border-top-left-radius: 0;
-  border-bottom-right-radius: 0;
-  padding-left: 20px;
-  padding-bottom: 10px;
 }
 .frontpage-grid .grid-3 {
   grid-area: g3;
