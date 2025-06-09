@@ -705,8 +705,35 @@ ul {
         display: none !important;
     }
 
+    .reverse-on-mobile {
+        flex-direction: column-reverse !important;
+    }
+
     .left {
         margin: 0 20px;
+    }
+
+    .frontpage-grid {
+        display: flex;
+        flex-direction: column;
+
+        >.grid-1-1, >.grid-1-2, >.grid-2-1, >.grid-2-2 { display: none; }
+
+        >* {
+            flex-direction: column;
+            
+            >.image {
+                min-height: 30vw;
+            }
+
+            >.text {
+                align-self: stretch;
+            }
+        }
+
+        >div {
+            margin-bottom: 50px;
+        }
     }
 }
 

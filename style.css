@@ -538,8 +538,30 @@ ul li {
   .hide-on-mobile {
     display: none !important;
   }
+  .reverse-on-mobile {
+    flex-direction: column-reverse !important;
+  }
   .left {
     margin: 0 20px;
+  }
+  .frontpage-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .frontpage-grid > .grid-1-1, .frontpage-grid > .grid-1-2, .frontpage-grid > .grid-2-1, .frontpage-grid > .grid-2-2 {
+    display: none;
+  }
+  .frontpage-grid > * {
+    flex-direction: column;
+  }
+  .frontpage-grid > * > .image {
+    min-height: 30vw;
+  }
+  .frontpage-grid > * > .text {
+    align-self: stretch;
+  }
+  .frontpage-grid > div {
+    margin-bottom: 50px;
   }
 }
 @media (prefers-color-scheme: dark) {
