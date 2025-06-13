@@ -248,6 +248,9 @@ nav {
 
     .grid-1-lore {
         grid-area: g1-lore;
+        
+        animation: none !important;
+        transition: none !important;
     }
 
     .grid-2 {
@@ -265,6 +268,9 @@ nav {
 
     .grid-2-lore {
         grid-area: g2-lore;
+        
+        animation: none !important;
+        transition: none !important;
     }
 
     .grid-3 {
