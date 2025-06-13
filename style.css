@@ -175,7 +175,7 @@ nav #home-link .logo path {
 .frontpage-grid .grid-1-lore {
   grid-area: g1-lore;
   animation: none !important;
-  transition: none !important;
+  transform: none !important;
 }
 .frontpage-grid .grid-2 {
   grid-area: g2;
@@ -192,7 +192,7 @@ nav #home-link .logo path {
 .frontpage-grid .grid-2-lore {
   grid-area: g2-lore;
   animation: none !important;
-  transition: none !important;
+  transform: none !important;
 }
 .frontpage-grid .grid-3 {
   grid-area: g3;
